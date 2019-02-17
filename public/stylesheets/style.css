@@ -1,0 +1,101 @@
+body {
+ font-family: Candara;
+}
+
+#boxAdd{
+  border-radius: 30px 60px;
+  background-color: #ccd2dd;
+  align-content: center;
+  text-align: center;
+  width: fit-content;
+  height: fit-content;
+  margin: auto;
+}
+
+#boxAddDev{
+  border-radius: 30px 60px;
+  background-color: #ccd2dd;
+  align-content: center;
+  text-align: center;
+  width: 400px;
+  height: 250px;
+  margin: auto;
+}
+
+#boxList{
+  border-radius: 30px 60px;
+  background-color: #ccd2dd;
+  align-content: center;
+  text-align: center;
+  width: 700px;
+  height: fit-content;
+  margin: auto;
+}
+
+.table{
+  align-content: center;
+  text-align: center;
+
+}
+
+
+.align-content-center{
+  text-align: center;
+  align-content: center;
+}
+
+.link{
+
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
+h1{
+  text-align: center;
+  font-size: 50px;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  color: #000000;
+  font-weight: normal;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+}
+
+a.button{
+  display:inline-block;
+   padding:0.3em 1.2em;
+   margin:0 0.3em 0.3em 0;
+   border-radius:2em;
+   box-sizing: border-box;
+   text-decoration:none;
+   font-weight:300;
+   color:#FFFFFF;
+   background-color:#4eb5f1;
+   text-align:center;
+   transition: all 0.2s;
+}

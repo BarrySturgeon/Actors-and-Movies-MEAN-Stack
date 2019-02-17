@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>List Movie</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+
+</head>
+<body>
+<h1>Movies and Actors App</h1>
+<div>
+    <ul>
+        <li><a class="link" href="/newMovie">Add Movie</a></li>
+        <li><a class="link" href="/listMovies">List Movie</a></li>
+        <li><a class="link" href="/updateMovie">Update Movie</a></li>
+        <li><a class="link" href="/removeMovie">Remove Movie</a></li>
+        <li><a class="link" href="/addActor">Add Actor</a></li>
+        <li><a class="link" href="/listActor">List Actor</a></li>
+    </ul>
+</div>
+<br>
+<div id="boxList">
+
+    <table class="table">
+        <thead>
+        <th >ID</th>
+        <th >Title</th>
+        <th >Year</th>
+
+        </thead>
+        <tbody>
+        <% for ( var i = 0; i < movies.length; i++){ %>
+        <tr>
+            <td>
+                <%= movies[i]._id %>
+            </td>
+            <td>
+                <%= movies[i].title %>
+            </td>
+            <td>
+                <%= movies[i].year %>
+            </td>
+
+        </tr>
+        <% }%>
+        </tbody>
+    </table>
+
+</div>
+
+</body>
+</html>

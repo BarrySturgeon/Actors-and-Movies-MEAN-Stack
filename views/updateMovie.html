@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>New Movie</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+
+</head>
+<body>
+<h1>Movies and Actors App</h1>
+<div>
+    <ul>
+        <li><a class="link" href="/newMovie">Add Movie</a></li>
+        <li><a class="link" href="/listMovies">List Movie</a></li>
+        <li><a class="link" href="/updateMovie">Update Movie</a></li>
+        <li><a class="link" href="/removeMovie">Remove Movie</a></li>
+        <li><a class="link" href="/addActor">Add Actor</a></li>
+        <li><a class="link" href="/listActor">List Actor</a></li>
+    </ul>
+</div>
+<br>
+<div id="boxAdd">
+
+    <form action="/updateMovie" method="post">
+        <br>
+        <div>
+            <label for="movieid">Movie ID</label>
+            <input class="form-control" list="movieid" name="movieid"/>
+            <datalist id="movieid">
+                <% for( var i=0; i < movies.length; i++){ %>
+                <option><%= movies[i]._id %></option>
+                <% } %>
+            </datalist>
+            </input>
+        </div>
+
+        <div>
+            <label for="status">Movie Status</label>
+            <select id="status" name="status" multiple>
+                <option value="inProgress">In Progress</option>
+                <option value="Complete">Complete</option>
+            </select>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+    <div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>New Movie</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+
+</head>
+<body>
+<h1>Movies and Actors App</h1>
+
+<div>
+    <ul>
+        <li><a class="link" href="/newMovie">Add Movie</a></li>
+        <li><a class="link" href="/listMovies">List Movie</a></li>
+        <li><a class="link" href="/updateMovie">Update Movie</a></li>
+        <li><a class="link" href="/removeMovie">Remove Movie</a></li>
+        <li><a class="link" href="/addActor">Add Actor</a></li>
+        <li><a class="link" href="/listActor">List Actor</a></li>
+    </ul>
+</div>
+<br>
+
+<div id="boxAddDev">
+<form action="/addActor" method="post">
+<br>
+    <div>
+        <label for="name">Actor Name</label>
+        <input class="form-control" id="name" name="name" type="text"/>
+    </div>
+
+
+    <div>
+        <label for="bYear">Birth Year</label>
+        <input id="bYear" name="bYear" type="date"/>
+    </div>
+
+
+    <button type="submit">Submit</button>
+</form>
+</div>
+
+</body>
+</html>
